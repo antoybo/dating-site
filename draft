@@ -1,0 +1,53 @@
+
+<html>
+<head> 
+	<title>Dating Site</title>
+	<meta name="author" content="Antoaneta">
+	<style>
+	fieldset { border:5px solid green;
+			 background-color:rgb(255, 255, 230);
+			 text-align: static;
+			 }	
+	label:hover {
+		font-size: 35px;
+}			 
+	</style>
+</head>
+
+<body> 
+	<form action="destination" method="post" enctype="multipart/form­data"
+	action="..........................."> 
+		<fieldset padding: 30px;> 
+		<legend>Your Face</legend>
+		Your image: <input type="file" name="fileToUpload"> <br>				
+		Your preview: <img src="skyline.jpg" width="100" height="100"> <br>
+		</fieldset> 
+		<fieldset> 
+		<legend>Your General Details</legend>
+		Name: <input type="text" name="firstName"> <br>
+		Gender:	<label class="radio-inline"><input type="radio" name="optradio">Female</label>
+				<label class="radio-inline"><input type="radio" name="optradio">Male</label> <br>
+		Age: <input type="text" name="firstName"> <br>
+		Date of birth: <input type="date" name="birthday"> <br>
+		Favorite color: <input type="color" name="color"> <br>
+		Which country: <input type="text" name="lastName"> <br>
+		</fieldset> 
+		<fieldset> 
+		<legend>Your Indicator</legend>
+		<label for="height">Height:</label>
+		<div style="float: left;width: 30%;text-align: right;">Short </div><input type="range" name="height" id="height" value="0" min="0" max="100"> <div>Tall</div><br>
+		<label for="salary">Salary:</label>
+		Poor <input type="range" min="0" max="100" step="5" value="50" name="salary"> Rich<br>
+		</fieldset> 
+		<fieldset> 
+		<legend>Your Contact Information</legend>
+		Email: <input type="email" name="firstName"> <br>
+		Mobile: <input type="text" name="lastName"> <br>
+		Address: <textarea rows="3" cols="50" name="address" > </textarea> <br>
+		Method to contact you: <input type="checkbox" name="gender" value="female"> Email <input type="checkbox" name="gender" value="male"> Whatsapp <input type="checkbox" name="gender" value="male"> In-app chat <br>
+		</fieldset> 
+		<br>
+		<input type="submit" value="Submit!">
+	</form>
+</body>
+</html>
